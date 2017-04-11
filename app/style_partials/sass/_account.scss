@@ -1,0 +1,385 @@
+h4 {
+  color: #666666;
+}
+
+#account-section {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 128px;
+}
+
+#account-section h4.form-title {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+#account-section article {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+	overflow: hidden;
+
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+@media screen and (min-width: 800px) {
+  #account-section article {
+    width: 40%;
+		margin: 40px auto;
+  }
+}
+
+.photo-upload {
+  display: none;
+}
+
+.user-photo-figure {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.user-photo-figure .remove-user-photo {
+  display: none;
+}
+
+.user-photo-figure.with-photo {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+.user-photo-figure.with-photo.editable .remove-user-photo {
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+  content: 'x';
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: bold;
+  color: white;
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.user-photo-figure.with-photo .remove-user-photo {
+  display: none;
+}
+
+.user-photo-figure.with-photo img {
+  width: 300px;
+
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+.user-photo-figure.with-photo figcaption {
+  display: none;
+}
+
+.user-photo-figure.with-photo.editable img {
+  cursor: pointer;
+  border: 1px solid #ccc;
+
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+.user-photo-figure.editable {}
+
+.user-photo-figure figcaption {
+  position: absolute;
+  top: 43%;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+progress {
+  width: 99%;
+  height: 17px;
+  display: none;
+}
+
+.user-photo-figure.with-photo progress {
+  width: 64.5%;
+  top: 47%;
+  left: 81px;
+  display: none;
+}
+
+.user-photo {
+  width: 200px;
+  height: auto;
+}
+
+.permissions {
+  display: inline-block;
+}
+
+.permissions ul {
+  padding: 0;
+  list-style: none;
+}
+
+.permissions li {
+  display: inline;
+  border: 1px solid #a5b3c2;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #4a6785;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.permissions li.selected {
+  background-color: #4a6785;
+  border: 1px solid #4a6785;
+  color: #fff;
+}
+
+.default-cc {
+  display: inline;
+  border: 1px solid #a5b3c2;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #4a6785;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.default-cc[data-default="true"] {
+  background-color: #4a6785;
+  border: 1px solid #4a6785;
+  color: #fff;
+}
+
+#permissions-selector {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.permissions-table {
+  width: 100%;
+}
+
+.permissions-table th:first-child {
+  padding: 0 5px 0 0;
+}
+
+.permissions-table th:nth-child(2) {
+  padding: 0 5px 0 0;
+}
+
+.permissions-table th:last-child {
+  padding: 0;
+}
+
+.permissions-table td:first-child input {
+  width: 100%;
+}
+
+.permissions-table td:nth-child(2) {
+  text-align: left;
+}
+
+.permissions-table td:nth-child(3) {
+  text-align: right;
+}
+
+#privileged-user {
+  height: 34px;
+  font-weight: normal;
+}
+
+.remove-privileged {
+  background-color: #666;
+  border-radius: 14px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  float: right;
+}
+
+.remove-privileged:hover {
+  color: white;
+}
+
+input#privileged-user::-webkit-input-placeholder,
+input#number::-webkit-input-placeholder {
+  font-weight: normal;
+}
+
+input#privileged-user::-moz-placeholder,
+input#number::-moz-placeholder {
+  font-weight: normal;
+}
+
+input#privileged-user:-ms-input-placeholder,
+input#number:-ms-input-placeholder {
+  font-weight: normal;
+}
+
+input#privileged-user:-moz-placeholder,
+input#number:-moz-placeholder {
+  font-weight: normal;
+}
+
+#add-permission {
+  width: 100%;
+}
+
+#cvc,
+#exp,
+#name,
+#number {
+  width: 100%;
+  height: 33px;
+}
+
+#credit-card-form .form-group:nth-child(3),
+#credit-card-form .form-group:nth-child(4) {
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) { 
+  #credit-card-form .form-group:nth-child(3),
+  #credit-card-form .form-group:nth-child(4) {
+    width: 48.5%;
+  }
+
+  #credit-card-form .form-group:nth-child(3) {
+    float: left;
+  }
+
+  #credit-card-form .form-group:nth-child(4) {
+    float: right;
+  }
+}
+
+#credit-card-form {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#credit-card-table {
+  width: 100%;
+}
+
+.credit-cards {
+  display: inline-block;
+}
+
+.credit-cards ul {
+  padding: 0;
+  list-style: none;
+}
+
+.credit-cards li {
+  display: inline-block;
+  border: 1px solid #a5b3c2;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #4a6785;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.credit-cards li.selected {
+  background-color: #4a6785;
+  border: 1px solid #4a6785;
+  color: #fff;
+}
+
+.remove-credit-card {
+  background-color: #666;
+  border-radius: 14px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  float: right;
+}
+
+.remove-credit-card:hover {
+  color: white;
+}
+
+#user-account-form {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+#user-account-form .form-group {
+  overflow: hidden;
+}
+
+#credit-card-form .form-group {
+  overflow: hidden;
+}
+

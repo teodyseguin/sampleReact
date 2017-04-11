@@ -1,0 +1,171 @@
+h4 {
+  color: #666666;
+}
+
+#profile-section {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 128px;
+}
+
+#profile-section h4.form-title {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+#profile-section article {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+@media screen and (min-width: 800px) {
+  #profile-section article {
+    width: 40%;
+	margin: 40px auto;
+  }
+}
+
+.photo-upload {
+  display: none;
+}
+
+.user-photo-figure {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.user-photo-figure .remove-user-photo {
+  display: none;
+}
+
+.user-photo-figure.with-photo {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+.user-photo-figure.with-photo.editable .remove-user-photo {
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+  content: 'x';
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: bold;
+  color: white;
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.user-photo-figure.with-photo .remove-user-photo {
+  display: none;
+}
+
+.user-photo-figure.with-photo img {
+  width: 300px;
+
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+.user-photo-figure.with-photo figcaption {
+  display: none;
+}
+
+.user-photo-figure.with-photo.editable img {
+  cursor: pointer;
+  border: 1px solid #ccc;
+
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+.user-photo-figure.editable {}
+
+.user-photo-figure figcaption {
+  position: absolute;
+  top: 43%;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+progress {
+  width: 99%;
+  height: 17px;
+  display: none;
+}
+
+.user-photo-figure.with-photo progress {
+  width: 64.5%;
+  top: 47%;
+  left: 81px;
+  display: none;
+}
+
+.user-photo {
+  width: 200px;
+  height: auto;
+}
+
+#user-account-form {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+#user-account-form .form-group {
+  overflow: hidden;
+}
+
+#credit-card-form .form-group {
+  overflow: hidden;
+}

@@ -1,0 +1,2430 @@
+@charset "UTF-8";
+/* line 1, ../../app/style_partials/sass/_account.scss */
+h4 {
+  color: #666666;
+}
+
+/* line 5, ../../app/style_partials/sass/_account.scss */
+#account-section {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 128px;
+}
+
+/* line 12, ../../app/style_partials/sass/_account.scss */
+#account-section h4.form-title {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 18, ../../app/style_partials/sass/_account.scss */
+#account-section article {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 38, ../../app/style_partials/sass/_account.scss */
+  #account-section article {
+    width: 40%;
+    margin: 40px auto;
+  }
+}
+/* line 44, ../../app/style_partials/sass/_account.scss */
+.photo-upload {
+  display: none;
+}
+
+/* line 48, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 64, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure .remove-user-photo {
+  display: none;
+}
+
+/* line 68, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+/* line 83, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo.editable .remove-user-photo {
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+  content: 'x';
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: bold;
+  color: white;
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+/* line 104, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo .remove-user-photo {
+  display: none;
+}
+
+/* line 108, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo img {
+  width: 300px;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+/* line 117, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo figcaption {
+  display: none;
+}
+
+/* line 121, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo.editable img {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+/* line 133, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure figcaption {
+  position: absolute;
+  top: 43%;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 141, ../../app/style_partials/sass/_account.scss */
+progress {
+  width: 99%;
+  height: 17px;
+  display: none;
+}
+
+/* line 147, ../../app/style_partials/sass/_account.scss */
+.user-photo-figure.with-photo progress {
+  width: 64.5%;
+  top: 47%;
+  left: 81px;
+  display: none;
+}
+
+/* line 154, ../../app/style_partials/sass/_account.scss */
+.user-photo {
+  width: 200px;
+  height: auto;
+}
+
+/* line 159, ../../app/style_partials/sass/_account.scss */
+.permissions {
+  display: inline-block;
+}
+
+/* line 163, ../../app/style_partials/sass/_account.scss */
+.permissions ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 168, ../../app/style_partials/sass/_account.scss */
+.permissions li {
+  display: inline;
+  border: 1px solid #a5b3c2;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #4a6785;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* line 181, ../../app/style_partials/sass/_account.scss */
+.permissions li.selected {
+  background-color: #4a6785;
+  border: 1px solid #4a6785;
+  color: #fff;
+}
+
+/* line 187, ../../app/style_partials/sass/_account.scss */
+.default-cc {
+  display: inline;
+  border: 1px solid #a5b3c2;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #4a6785;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* line 200, ../../app/style_partials/sass/_account.scss */
+.default-cc[data-default="true"] {
+  background-color: #4a6785;
+  border: 1px solid #4a6785;
+  color: #fff;
+}
+
+/* line 206, ../../app/style_partials/sass/_account.scss */
+#permissions-selector {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+/* line 212, ../../app/style_partials/sass/_account.scss */
+.permissions-table {
+  width: 100%;
+}
+
+/* line 216, ../../app/style_partials/sass/_account.scss */
+.permissions-table th:first-child {
+  padding: 0 5px 0 0;
+}
+
+/* line 220, ../../app/style_partials/sass/_account.scss */
+.permissions-table th:nth-child(2) {
+  padding: 0 5px 0 0;
+}
+
+/* line 224, ../../app/style_partials/sass/_account.scss */
+.permissions-table th:last-child {
+  padding: 0;
+}
+
+/* line 228, ../../app/style_partials/sass/_account.scss */
+.permissions-table td:first-child input {
+  width: 100%;
+}
+
+/* line 232, ../../app/style_partials/sass/_account.scss */
+.permissions-table td:nth-child(2) {
+  text-align: left;
+}
+
+/* line 236, ../../app/style_partials/sass/_account.scss */
+.permissions-table td:nth-child(3) {
+  text-align: right;
+}
+
+/* line 240, ../../app/style_partials/sass/_account.scss */
+#privileged-user {
+  height: 34px;
+  font-weight: normal;
+}
+
+/* line 245, ../../app/style_partials/sass/_account.scss */
+.remove-privileged {
+  background-color: #666;
+  border-radius: 14px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  float: right;
+}
+
+/* line 259, ../../app/style_partials/sass/_account.scss */
+.remove-privileged:hover {
+  color: white;
+}
+
+/* line 263, ../../app/style_partials/sass/_account.scss */
+input#privileged-user::-webkit-input-placeholder,
+input#number::-webkit-input-placeholder {
+  font-weight: normal;
+}
+
+/* line 268, ../../app/style_partials/sass/_account.scss */
+input#privileged-user::-moz-placeholder,
+input#number::-moz-placeholder {
+  font-weight: normal;
+}
+
+/* line 273, ../../app/style_partials/sass/_account.scss */
+input#privileged-user:-ms-input-placeholder,
+input#number:-ms-input-placeholder {
+  font-weight: normal;
+}
+
+/* line 278, ../../app/style_partials/sass/_account.scss */
+input#privileged-user:-moz-placeholder,
+input#number:-moz-placeholder {
+  font-weight: normal;
+}
+
+/* line 283, ../../app/style_partials/sass/_account.scss */
+#add-permission {
+  width: 100%;
+}
+
+/* line 287, ../../app/style_partials/sass/_account.scss */
+#cvc,
+#exp,
+#name,
+#number {
+  width: 100%;
+  height: 33px;
+}
+
+/* line 295, ../../app/style_partials/sass/_account.scss */
+#credit-card-form .form-group:nth-child(3),
+#credit-card-form .form-group:nth-child(4) {
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 301, ../../app/style_partials/sass/_account.scss */
+  #credit-card-form .form-group:nth-child(3),
+  #credit-card-form .form-group:nth-child(4) {
+    width: 48.5%;
+  }
+
+  /* line 306, ../../app/style_partials/sass/_account.scss */
+  #credit-card-form .form-group:nth-child(3) {
+    float: left;
+  }
+
+  /* line 310, ../../app/style_partials/sass/_account.scss */
+  #credit-card-form .form-group:nth-child(4) {
+    float: right;
+  }
+}
+/* line 315, ../../app/style_partials/sass/_account.scss */
+#credit-card-form {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 322, ../../app/style_partials/sass/_account.scss */
+#credit-card-table {
+  width: 100%;
+}
+
+/* line 326, ../../app/style_partials/sass/_account.scss */
+.credit-cards {
+  display: inline-block;
+}
+
+/* line 330, ../../app/style_partials/sass/_account.scss */
+.credit-cards ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 335, ../../app/style_partials/sass/_account.scss */
+.credit-cards li {
+  display: inline-block;
+  border: 1px solid #a5b3c2;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #4a6785;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* line 348, ../../app/style_partials/sass/_account.scss */
+.credit-cards li.selected {
+  background-color: #4a6785;
+  border: 1px solid #4a6785;
+  color: #fff;
+}
+
+/* line 354, ../../app/style_partials/sass/_account.scss */
+.remove-credit-card {
+  background-color: #666;
+  border-radius: 14px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  float: right;
+}
+
+/* line 368, ../../app/style_partials/sass/_account.scss */
+.remove-credit-card:hover {
+  color: white;
+}
+
+/* line 372, ../../app/style_partials/sass/_account.scss */
+#user-account-form {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 378, ../../app/style_partials/sass/_account.scss */
+#user-account-form .form-group {
+  overflow: hidden;
+}
+
+/* line 382, ../../app/style_partials/sass/_account.scss */
+#credit-card-form .form-group {
+  overflow: hidden;
+}
+
+/* line 1, ../../app/style_partials/sass/_dashboard.scss */
+#panda-clouds-app {
+  min-height: 100%;
+  margin-bottom: -142px;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 8, ../../app/style_partials/sass/_dashboard.scss */
+  #panda-clouds-app {
+    overflow-x: visible;
+  }
+}
+/* line 13, ../../app/style_partials/sass/_dashboard.scss */
+#panda-clouds-app:after {
+  content: '';
+  display: block;
+  height: 142px;
+}
+
+/* line 19, ../../app/style_partials/sass/_dashboard.scss */
+select {
+  cursor: pointer;
+}
+
+/* line 23, ../../app/style_partials/sass/_dashboard.scss */
+.login-form-column {
+  width: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 650px) {
+  /* line 29, ../../app/style_partials/sass/_dashboard.scss */
+  .login-form-column {
+    width: 26.5%;
+  }
+}
+/* line 36, ../../app/style_partials/sass/_dashboard.scss */
+.login-form .btn:hover {
+  color: #ffffff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+
+/* line 42, ../../app/style_partials/sass/_dashboard.scss */
+.signup-form .btn {
+  background-color: #f0ad4e;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+  border-color: #eea236;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* line 58, ../../app/style_partials/sass/_dashboard.scss */
+.signup-form .btn:hover {
+  color: #ffffff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+
+/* line 64, ../../app/style_partials/sass/_dashboard.scss */
+#user-info .inner {
+  margin: 0 10px 10px;
+}
+
+/* line 68, ../../app/style_partials/sass/_dashboard.scss */
+.server-image {
+  float: left;
+  width: 15%;
+  margin: 0 10px;
+  padding: 0 0 70px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 77, ../../app/style_partials/sass/_dashboard.scss */
+  .server-image {
+    width: 15%;
+    padding: 0;
+  }
+}
+/* line 83, ../../app/style_partials/sass/_dashboard.scss */
+.img-responsive {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 89, ../../app/style_partials/sass/_dashboard.scss */
+  .img-responsive {
+    width: 100%;
+  }
+}
+/* line 94, ../../app/style_partials/sass/_dashboard.scss */
+.server-image-placeholder {
+  width: 100%;
+}
+
+/* line 98, ../../app/style_partials/sass/_dashboard.scss */
+label.left-text {
+  text-align: left;
+}
+
+/* line 102, ../../app/style_partials/sass/_dashboard.scss */
+.state {
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 111, ../../app/style_partials/sass/_dashboard.scss */
+  .state {
+    width: 10px;
+    padding: 0;
+  }
+}
+/* line 117, ../../app/style_partials/sass/_dashboard.scss */
+.state-item {
+  width: 10px;
+  height: 34px;
+  background-color: #e4e4e4;
+  border-bottom: 2px solid #fff;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 125, ../../app/style_partials/sass/_dashboard.scss */
+  .state-item {
+    width: 5px;
+    height: 67px;
+  }
+}
+/* line 131, ../../app/style_partials/sass/_dashboard.scss */
+li.requested {
+  background-color: red;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 137, ../../app/style_partials/sass/_dashboard.scss */
+li.requested.false {
+  background-color: #e4e4e4;
+}
+
+/* line 141, ../../app/style_partials/sass/_dashboard.scss */
+li.processing {
+  background-color: yellow;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 147, ../../app/style_partials/sass/_dashboard.scss */
+li.processing.false {
+  background-color: #e4e4e4;
+}
+
+/* line 151, ../../app/style_partials/sass/_dashboard.scss */
+li.finished {
+  background-color: green;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 157, ../../app/style_partials/sass/_dashboard.scss */
+li.finished.false {
+  background-color: #e4e4e4;
+}
+
+/* line 161, ../../app/style_partials/sass/_dashboard.scss */
+li.tested {
+  background-color: blue;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 167, ../../app/style_partials/sass/_dashboard.scss */
+li.tested.false {
+  background-color: #e4e4e4;
+}
+
+/* line 171, ../../app/style_partials/sass/_dashboard.scss */
+.server-buttons .delete {
+  background-image: url("../img/delete.png") !important;
+}
+
+/* line 175, ../../app/style_partials/sass/_dashboard.scss */
+.server-buttons .switch.off {
+  background-image: url("../img/switch-off.png") !important;
+}
+
+/* line 179, ../../app/style_partials/sass/_dashboard.scss */
+.server-buttons .switch.on {
+  background-image: url("../img/switch-on.png") !important;
+}
+
+/* line 183, ../../app/style_partials/sass/_dashboard.scss */
+.server-last-column {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 194, ../../app/style_partials/sass/_dashboard.scss */
+  .server-last-column {
+    top: 0;
+    width: 45%;
+    padding: 15px 0 0 0;
+  }
+}
+@media screen and (min-width: 990px) {
+  /* line 202, ../../app/style_partials/sass/_dashboard.scss */
+  .server-last-column {
+    top: 0;
+    width: 30%;
+    padding: 15px 0 0 0;
+  }
+}
+/* line 209, ../../app/style_partials/sass/_dashboard.scss */
+.top-photo-series {
+  float: left;
+  width: 69%;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 217, ../../app/style_partials/sass/_dashboard.scss */
+  .top-photo-series {
+    height: auto;
+  }
+}
+/* line 222, ../../app/style_partials/sass/_dashboard.scss */
+.top-photo-series .btn-group {
+  display: block;
+}
+
+/* line 226, ../../app/style_partials/sass/_dashboard.scss */
+.top-photo-series img {
+  margin: 0 10px;
+  width: 10%;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 232, ../../app/style_partials/sass/_dashboard.scss */
+  .top-photo-series img {
+    margin: 0 8px;
+    width: 32px;
+  }
+}
+/* line 238, ../../app/style_partials/sass/_dashboard.scss */
+.top-photo-series .btn.btn-wbg {
+  padding: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 243, ../../app/style_partials/sass/_dashboard.scss */
+  .top-photo-series .btn.btn-wbg {
+    padding: 16px;
+  }
+}
+/* line 248, ../../app/style_partials/sass/_dashboard.scss */
+.bottom-photo-series {
+  float: left;
+  width: 100%;
+  display: none;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 259, ../../app/style_partials/sass/_dashboard.scss */
+  .bottom-photo-series {
+    display: block;
+  }
+}
+/* line 264, ../../app/style_partials/sass/_dashboard.scss */
+.bottom-photo-series img {
+  float: right;
+  margin: 0 8px;
+  width: 50%;
+  height: auto;
+  background-color: #3498db;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 273, ../../app/style_partials/sass/_dashboard.scss */
+  .bottom-photo-series img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* line 279, ../../app/style_partials/sass/_dashboard.scss */
+.server-buttons {
+  float: right;
+  margin: 0 20px 0 0;
+  text-align: center;
+}
+
+/* line 285, ../../app/style_partials/sass/_dashboard.scss */
+.view-server-details {
+  position: relative;
+  padding: 15px 0;
+  overflow: hidden;
+  border: 1px solid silver;
+  width: 97.5%;
+  margin: 0 auto 20px;
+  border-bottom: 5px solid #ccc;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+/* line 299, ../../app/style_partials/sass/_dashboard.scss */
+.view-server-details .row {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 686px) {
+  /* line 308, ../../app/style_partials/sass/_dashboard.scss */
+  .view-server-details .row {
+    padding-bottom: 0;
+  }
+}
+/* line 313, ../../app/style_partials/sass/_dashboard.scss */
+.server-details-list {
+  float: left;
+  width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 322, ../../app/style_partials/sass/_dashboard.scss */
+  .server-details-list {
+    padding-right: 15px;
+    overflow: visible;
+    height: auto;
+  }
+}
+/* line 329, ../../app/style_partials/sass/_dashboard.scss */
+.server-details {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  cursor: pointer;
+  height: 120px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 339, ../../app/style_partials/sass/_dashboard.scss */
+  .server-details {
+    height: auto;
+    overflow: visible;
+  }
+}
+/* line 345, ../../app/style_partials/sass/_dashboard.scss */
+.server-name {
+  font-weight: bold;
+}
+
+/* line 349, ../../app/style_partials/sass/_dashboard.scss */
+.mmlistview #new-server {
+  padding: 20px 60px;
+  font-size: 24px;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 10px #ccc;
+}
+/* line 356, ../../app/style_partials/sass/_dashboard.scss */
+.mmlistview #new-server:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 362, ../../app/style_partials/sass/_dashboard.scss */
+  .mmlistview #new-server {
+    padding: 16px 16px 16px 60px;
+    font-size: 24px;
+  }
+}
+/* line 368, ../../app/style_partials/sass/_dashboard.scss */
+.server-details-actions {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* line 376, ../../app/style_partials/sass/_dashboard.scss */
+.mmlistview #filters li {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 382, ../../app/style_partials/sass/_dashboard.scss */
+  .mmlistview #filters li {
+    width: auto;
+  }
+}
+/* line 387, ../../app/style_partials/sass/_dashboard.scss */
+.btn.btn-wbg {
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center center;
+  padding: 22px;
+}
+
+/* line 394, ../../app/style_partials/sass/_dashboard.scss */
+.btn.warning {
+  background-image: url(../img/warning.png);
+}
+
+/* line 398, ../../app/style_partials/sass/_dashboard.scss */
+.btn.error {
+  background-image: url(../img/error.png);
+}
+
+/* line 402, ../../app/style_partials/sass/_dashboard.scss */
+.btn.running {
+  background-image: url(../img/server-running.png);
+}
+
+/* line 406, ../../app/style_partials/sass/_dashboard.scss */
+.btn.maintenance {
+  background-image: url(../img/server-maintenance.png);
+}
+
+/* line 410, ../../app/style_partials/sass/_dashboard.scss */
+.btn.computer {
+  background-image: url(../img/computer.png);
+}
+
+/* line 414, ../../app/style_partials/sass/_dashboard.scss */
+.btn.delete {
+  background-image: url("../img/delete.png") !important;
+}
+
+/* line 418, ../../app/style_partials/sass/_dashboard.scss */
+.footer-column {
+  float: left;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+/* line 428, ../../app/style_partials/sass/_dashboard.scss */
+.footer-column:last-child {
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 433, ../../app/style_partials/sass/_dashboard.scss */
+  .footer-column {
+    width: 33.33%;
+    border-bottom: 0;
+  }
+}
+/* line 439, ../../app/style_partials/sass/_dashboard.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+/* line 443, ../../app/style_partials/sass/_dashboard.scss */
+#fileupload {
+  display: none;
+}
+
+/* line 447, ../../app/style_partials/sass/_dashboard.scss */
+.image-upload {
+  margin-bottom: 40px;
+}
+
+/* line 451, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/* line 469, ../../app/style_partials/sass/_dashboard.scss */
+.remove-uploaded-photo {
+  display: none;
+}
+
+/* line 473, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo {
+  width: 200px;
+  height: auto;
+  overflow: visible;
+  position: relative;
+  background-color: transparent;
+}
+
+/* line 481, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo.editable .remove-uploaded-photo {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: 'x';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: bold;
+  color: white;
+  width: 24px;
+  height: 24px;
+  line-height: 1.6;
+  background-color: grey;
+}
+
+/* line 499, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo .remove-uploaded-photo {
+  display: none;
+}
+
+/* line 503, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo img {
+  visibility: hidden;
+}
+
+/* line 507, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo img {
+  width: 200px;
+  visibility: visible;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 522, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo figcaption {
+  display: none;
+}
+
+/* line 526, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo.editable img {
+  cursor: pointer;
+  border: 1px dashed #000;
+}
+
+/* line 533, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo figcaption {
+  position: absolute;
+  top: 43%;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 541, ../../app/style_partials/sass/_dashboard.scss */
+progress {
+  width: 99%;
+  height: 17px;
+  display: none;
+}
+
+/* line 547, ../../app/style_partials/sass/_dashboard.scss */
+.upload-photo.with-photo progress {
+  width: 64.5%;
+  top: 47%;
+  left: 81px;
+  display: none;
+}
+
+/* line 554, ../../app/style_partials/sass/_dashboard.scss */
+.server-photo,
+.user-photo {
+  width: 200px;
+  height: auto;
+}
+
+/* line 560, ../../app/style_partials/sass/_dashboard.scss */
+#fileselect {
+  margin: 0 auto 10px;
+}
+
+/* line 564, ../../app/style_partials/sass/_dashboard.scss */
+.spinner-wrapper {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 575, ../../app/style_partials/sass/_dashboard.scss */
+.switcher {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* line 582, ../../app/style_partials/sass/_dashboard.scss */
+.server-buttons label.switcher {
+  margin: 0;
+}
+
+/* line 586, ../../app/style_partials/sass/_dashboard.scss */
+.switcher .switcher-input {
+  display: none;
+}
+
+/* line 590, ../../app/style_partials/sass/_dashboard.scss */
+.switcher-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+
+/* line 607, ../../app/style_partials/sass/_dashboard.scss */
+.switcher-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+
+/* line 624, ../../app/style_partials/sass/_dashboard.scss */
+.switcher-input:checked + .switcher-slider {
+  background-color: #2196F3;
+}
+
+/* line 628, ../../app/style_partials/sass/_dashboard.scss */
+.switcher-input:focus + .switcher-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* line 632, ../../app/style_partials/sass/_dashboard.scss */
+.switcher-input:checked + .switcher-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* line 638, ../../app/style_partials/sass/_dashboard.scss */
+.states {
+  float: left;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 644, ../../app/style_partials/sass/_dashboard.scss */
+  .states {
+    padding-left: 15px;
+  }
+}
+/* line 649, ../../app/style_partials/sass/_dashboard.scss */
+.dummy-.col-md-2 {
+  float: right;
+  width: 17%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 686px) {
+  /* line 658, ../../app/style_partials/sass/_dashboard.scss */
+  .dummy-.col-md-2 {
+    display: none;
+  }
+}
+/* line 663, ../../app/style_partials/sass/_dashboard.scss */
+.dummy-.col-md-2 img {
+  width: 70%;
+  background-color: #3498db;
+}
+
+/* line 668, ../../app/style_partials/sass/_dashboard.scss */
+.view-details {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 675, ../../app/style_partials/sass/_dashboard.scss */
+  .view-details {
+    display: none;
+  }
+}
+/* line 680, ../../app/style_partials/sass/_dashboard.scss */
+#create-new-account-modal .col-sm-5 {
+  padding-left: 0;
+}
+
+/* line 684, ../../app/style_partials/sass/_dashboard.scss */
+.account-thumbnail {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+
+/* line 694, ../../app/style_partials/sass/_dashboard.scss */
+.navbar-nav .dropdown-toggle.with-thumbnail {
+  padding: 11px;
+}
+
+/* line 699, ../../app/style_partials/sass/_dashboard.scss */
+.server-list-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 1, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #user-info {
+  padding-top: 128px;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 6, ../../app/style_partials/sass/_legacy.scss */
+  .mmlistview #user-info {
+    padding-top: 140px;
+  }
+}
+/* line 11, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview html,
+.mmlistview body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 130px 0 40px 0;
+  border: 1px solid #ccc;
+  position: relative;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 29, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app:before {
+  content: '';
+  border-left: 1px solid #f5d6d6;
+  border-right: 1px solid #f5d6d6;
+  width: 2px;
+  position: absolute;
+  top: 45px;
+  top: 0px;
+  left: 40px;
+  height: 100%;
+}
+
+/* line 41, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+/* line 45, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app input:-moz-placeholder {
+  font-style: italic;
+  color: #a9a9a9;
+}
+
+/* line 50, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app h1 {
+  position: absolute;
+  top: -120px;
+  width: 100%;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  color: #888;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 65, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview .section {
+  position: relative;
+}
+
+/* line 69, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #header {
+  padding-top: 15px;
+  border-radius: inherit;
+  position: relative;
+  width: 97.5%;
+  margin: 0 auto 20px;
+}
+
+/* line 77, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 15px;
+  z-index: 2;
+  border-bottom: 1px solid #6c615c;
+  background: #8d7d77;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 110, 100, 0.8)), to(rgba(101, 84, 76, 0.8)));
+  background: -webkit-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+  background: -moz-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+  background: -o-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+  background: -ms-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+  background: linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#9d8b83', EndColorStr='#847670');
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+/* line 98, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #new-todo,
+.mmlistview .edit {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  line-height: 1.4em;
+  border: 0;
+  outline: none;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 124, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #new-todo {
+  padding: 16px 16px 16px 60px;
+  border: none;
+  background: rgba(0, 0, 0, 0.02);
+  z-index: 2;
+  box-shadow: none;
+}
+
+/* line 132, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #main {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 137, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview label[for='toggle-all'] {
+  display: none;
+}
+
+/* line 141, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #toggle-all {
+  position: absolute;
+  top: -56px;
+  left: -15px;
+  width: 65px;
+  height: 41px;
+  text-align: center;
+  border: none;
+  /* Mobile Safari */
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 158, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #toggle-all:before {
+  content: '»';
+  font-size: 28px;
+  color: #d9d9d9;
+  padding: 0 25px 7px;
+}
+
+/* line 165, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #toggle-all:checked:before {
+  color: #737373;
+}
+
+/* line 169, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 176, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list .spinner {
+  margin: 15px auto;
+}
+
+/* line 180, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list > li {
+  text-align: left;
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px dotted #ccc;
+}
+
+/* line 187, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li:last-child {
+  border-bottom: none;
+}
+
+/* line 191, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li.editing {
+  border-bottom: none;
+  padding: 0;
+}
+
+/* line 196, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li.editing .edit {
+  display: block;
+  width: 506px;
+  padding: 13px 17px 12px 17px;
+  margin: 0 0 0 43px;
+}
+
+/* line 203, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li.editing .view {
+  display: none;
+}
+
+/* line 207, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .toggle {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none;
+  /* Mobile Safari */
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 222, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .toggle:after {
+  font-size: 18px;
+  content: '✔';
+  line-height: 43px;
+  /* 40 + a couple of pixels visual adjustment */
+  font-size: 20px;
+  color: #d9d9d9;
+  text-shadow: 0 -1px 0 #bfbfbf;
+}
+
+/* line 231, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .toggle:checked:after {
+  color: #85ada7;
+  text-shadow: 0 1px 0 #669991;
+  bottom: 1px;
+  position: relative;
+}
+
+/* line 238, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li label {
+  word-break: break-word;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  line-height: 1.2;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+/* line 250, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li.completed label {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+/* line 255, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .todo-destroy {
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 22px;
+  color: #a88a8a;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 268, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .todo-destroy:hover {
+  text-shadow: 0 0 1px #000, 0 0 10px rgba(199, 107, 107, 0.8);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* line 278, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .todo-destroy:after {
+  content: '✖';
+}
+
+/* line 282, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li:hover .todo-destroy {
+  display: block;
+}
+
+/* line 286, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li .edit {
+  display: none;
+}
+
+/* line 290, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-list li.editing:last-child {
+  margin-bottom: -1px;
+}
+
+/* line 294, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #footer {
+  color: #777;
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid #cccccc;
+}
+
+/* line 301, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #todo-count {
+  text-align: left;
+}
+
+/* line 305, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 311, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #filters li {
+  display: inline;
+}
+
+/* line 315, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #filters li a {
+  color: #83756f;
+  margin: 2px;
+  text-decoration: none;
+}
+
+/* line 321, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #filters li a.selected {
+  font-weight: bold;
+}
+
+/* line 325, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #info {
+  margin: 65px auto 0;
+  color: #a6a6a6;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* line 333, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #info a {
+  color: inherit;
+}
+
+/*
+  Hack to remove background from Mobile Safari.
+  Can't use it globally since it destroys checkboxes in Firefox and Opera
+  */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 342, ../../app/style_partials/sass/_legacy.scss */
+  #toggle-all,
+  #todo-list li .toggle {
+    background: none;
+  }
+}
+/* line 348, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .login {
+  width: 350px;
+  margin: 45px auto 25px auto;
+}
+
+/* line 353, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .login h2 {
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* line 359, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .login input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 5px;
+  width: 340px;
+}
+
+/* line 367, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .login .signup-form {
+  margin-top: 25px;
+}
+
+/* line 371, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .login button {
+  padding: 5px 10px;
+  background: #eee;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  font-family: "Helvetica Neue";
+}
+
+/* line 381, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .login .error {
+  border: 1px solid red;
+  background: #FDEFF0;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+}
+
+/* line 388, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content #user-info {
+  padding: 5px 10px;
+  border-top: 1px solid #ededed;
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+/* line 396, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #panda-clouds-app .content .mark-all-done {
+  margin-left: 8px;
+}
+
+/* line 400, ../../app/style_partials/sass/_legacy.scss */
+#credits {
+  color: #888;
+  text-align: center;
+  padding-top: 142px;
+  height: 142px;
+}
+
+/* line 407, ../../app/style_partials/sass/_legacy.scss */
+.mmlistview #credits a {
+  color: #888;
+}
+
+/* line 1, ../../app/style_partials/sass/_main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../../app/style_partials/sass/_main.scss */
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+/* line 17, ../../app/style_partials/sass/_main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+/* line 23, ../../app/style_partials/sass/_main.scss */
+h1 {
+  font-size: 40px;
+}
+
+/* line 27, ../../app/style_partials/sass/_main.scss */
+h3 {
+  color: #95a5a6;
+  font-weight: 400;
+}
+
+/* line 32, ../../app/style_partials/sass/_main.scss */
+h4 {
+  color: #95a5a6;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Paragraph & Typographic */
+/* line 39, ../../app/style_partials/sass/_main.scss */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* line 45, ../../app/style_partials/sass/_main.scss */
+.centered {
+  text-align: center;
+}
+
+/* Links */
+/* line 50, ../../app/style_partials/sass/_main.scss */
+a {
+  color: #3498db;
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* line 61, ../../app/style_partials/sass/_main.scss */
+a:hover,
+a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 68, ../../app/style_partials/sass/_main.scss */
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* line 77, ../../app/style_partials/sass/_main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 86, ../../app/style_partials/sass/_main.scss */
+.navbar-default {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #3498db;
+  border-color: transparent;
+}
+
+/* line 93, ../../app/style_partials/sass/_main.scss */
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+/* line 97, ../../app/style_partials/sass/_main.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+/* Helpers */
+/* line 103, ../../app/style_partials/sass/_main.scss */
+.mt {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 108, ../../app/style_partials/sass/_main.scss */
+.form-control {
+  height: 42px;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* line 114, ../../app/style_partials/sass/_main.scss */
+i {
+  margin: 8px;
+  color: #3498db;
+}
+
+/* HeaderWrap */
+/* line 121, ../../app/style_partials/sass/_main.scss */
+#headerwrap {
+  background-color: #3498db;
+  padding-top: 120px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 140, ../../app/style_partials/sass/_main.scss */
+#headerwrap h1 {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* line 148, ../../app/style_partials/sass/_main.scss */
+#headerwrap form {
+  margin-bottom: 65px;
+}
+
+/*=======================================
+ PRICE SECTION STYLES
+ ==================================================*/
+/* line 155, ../../app/style_partials/sass/_main.scss */
+#price-sec {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* line 160, ../../app/style_partials/sass/_main.scss */
+.plan {
+  background: #eef1f3;
+  padding: 0 0 15px 0;
+  margin: 30px 0px;
+  list-style: none;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* line 173, ../../app/style_partials/sass/_main.scss */
+.plan:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 181, ../../app/style_partials/sass/_main.scss */
+.plan li {
+  padding: 15px 0px;
+  color: #434749;
+  border-top: 1px dashed #000;
+}
+
+/* line 187, ../../app/style_partials/sass/_main.scss */
+.plan li.plan-head {
+  padding: 15px 0px;
+  background-color: #0d77b6;
+  color: #FFFFFF;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+
+/* line 197, ../../app/style_partials/sass/_main.scss */
+.plan li.main-price {
+  padding: 25px 0px;
+  background-color: #15b4ff;
+  color: #fff;
+  border: none;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+/* line 206, ../../app/style_partials/sass/_main.scss */
+.c-b {
+  background-color: #B60D43 !important;
+}
+
+/* line 209, ../../app/style_partials/sass/_main.scss */
+.c-v {
+  background-color: #01AA30 !important;
+}
+
+/* line 212, ../../app/style_partials/sass/_main.scss */
+.c-a {
+  background-color: #818181 !important;
+}
+
+/*=======================================
+ LEGAL MENU STYLES
+ ==================================================*/
+/* line 221, ../../app/style_partials/sass/_main.scss */
+#legal-menu {
+  width: 100%;
+  overflow: scroll;
+}
+
+/* line 226, ../../app/style_partials/sass/_main.scss */
+#legal-menu ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
+}
+
+/* line 234, ../../app/style_partials/sass/_main.scss */
+#legal-menu ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+}
+
+/* line 241, ../../app/style_partials/sass/_main.scss */
+#legal-menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* line 248, ../../app/style_partials/sass/_main.scss */
+#legal-menu li a:hover {
+  color: #212121;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 254, ../../app/style_partials/sass/_main.scss */
+.server-details-contents {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 128px;
+  position: relative;
+}
+
+/* line 262, ../../app/style_partials/sass/_main.scss */
+button.navbar-toggle {
+  z-index: 1;
+}
+
+/* line 266, ../../app/style_partials/sass/_main.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+/* line 270, ../../app/style_partials/sass/_main.scss */
+.mmlistview.content {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 276, ../../app/style_partials/sass/_main.scss */
+.panda-logo {
+  width: 173px;
+  height: auto;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 282, ../../app/style_partials/sass/_main.scss */
+  .panda-logo {
+    width: 210px;
+    height: auto;
+  }
+}
+/* line 288, ../../app/style_partials/sass/_main.scss */
+.image-upload .form-group {
+  display: none;
+}
+
+/* line 292, ../../app/style_partials/sass/_main.scss */
+#dropdown + .dropdown-menu {
+  display: block;
+}
+
+/* line 1, ../../app/style_partials/sass/_profile.scss */
+h4 {
+  color: #666666;
+}
+
+/* line 5, ../../app/style_partials/sass/_profile.scss */
+#profile-section {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-top: 128px;
+}
+
+/* line 12, ../../app/style_partials/sass/_profile.scss */
+#profile-section h4.form-title {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 18, ../../app/style_partials/sass/_profile.scss */
+#profile-section article {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 38, ../../app/style_partials/sass/_profile.scss */
+  #profile-section article {
+    width: 40%;
+    margin: 40px auto;
+  }
+}
+/* line 44, ../../app/style_partials/sass/_profile.scss */
+.photo-upload {
+  display: none;
+}
+
+/* line 48, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 64, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure .remove-user-photo {
+  display: none;
+}
+
+/* line 68, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+/* line 83, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo.editable .remove-user-photo {
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+  content: 'x';
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: bold;
+  color: white;
+  display: block;
+  background-color: red;
+  border-radius: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+/* line 104, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo .remove-user-photo {
+  display: none;
+}
+
+/* line 108, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo img {
+  width: 300px;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+/* line 117, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo figcaption {
+  display: none;
+}
+
+/* line 121, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo.editable img {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -o-box-shadow: 0 0 5px #ccc;
+}
+
+/* line 133, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure figcaption {
+  position: absolute;
+  top: 43%;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 141, ../../app/style_partials/sass/_profile.scss */
+progress {
+  width: 99%;
+  height: 17px;
+  display: none;
+}
+
+/* line 147, ../../app/style_partials/sass/_profile.scss */
+.user-photo-figure.with-photo progress {
+  width: 64.5%;
+  top: 47%;
+  left: 81px;
+  display: none;
+}
+
+/* line 154, ../../app/style_partials/sass/_profile.scss */
+.user-photo {
+  width: 200px;
+  height: auto;
+}
+
+/* line 159, ../../app/style_partials/sass/_profile.scss */
+#user-account-form {
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+/* line 165, ../../app/style_partials/sass/_profile.scss */
+#user-account-form .form-group {
+  overflow: hidden;
+}
+
+/* line 169, ../../app/style_partials/sass/_profile.scss */
+#credit-card-form .form-group {
+  overflow: hidden;
+}
+
+/* line 1, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents h4.form-title {
+  text-align: left;
+}
+
+/* line 5, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents .permissions li.account-permission {
+  display: inline;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #999;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* line 18, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents .permissions li.account-permission.selected {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+/* line 24, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents .permissions-table {
+  text-align: left;
+}
+
+/* line 28, ../../app/style_partials/sass/_server-details.scss */
+.server-photo-figure {
+  border: 1px dashed #ccc;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 37, ../../app/style_partials/sass/_server-details.scss */
+.server-photo-figure.editable.with-photo {
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+/* line 45, ../../app/style_partials/sass/_server-details.scss */
+.server-photo-figure.with-photo {
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+/* line 53, ../../app/style_partials/sass/_server-details.scss */
+.server-photo-figure.with-photo.editable img {
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 63, ../../app/style_partials/sass/_server-details.scss */
+.server-photo-figure.with-photo img {
+  width: 300px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 72, ../../app/style_partials/sass/_server-details.scss */
+.server-photo-figure figcaption {
+  padding: 0 10px;
+}
+
+/* line 76, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents article {
+  width: 95%;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+@media screen and (min-width: 990px) {
+  /* line 96, ../../app/style_partials/sass/_server-details.scss */
+  .server-details-contents article {
+    margin: 40px auto;
+    width: 40%;
+  }
+}
+/* line 102, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents #server-name {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 116, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents #server-name[disabled] {
+  color: #ccc;
+}
+
+/* line 120, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents #server-name:focus {
+  outline: none;
+}
+
+/* line 124, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents #server-make-active {
+  margin: 20px 0;
+}
+
+/* line 128, ../../app/style_partials/sass/_server-details.scss */
+.server-details li {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 134, ../../app/style_partials/sass/_server-details.scss */
+  .server-details li {
+    font-size: 24px;
+  }
+}
+/* line 139, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents select {
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+/* line 146, ../../app/style_partials/sass/_server-details.scss */
+.server-details-contents .form-group label {
+  width: 100%;
+  text-align: left;
+}
+
+/* line 151, ../../app/style_partials/sass/_server-details.scss */
+.switcher-wrapper {
+  margin-top: 39px;
+}
+
+/* line 155, ../../app/style_partials/sass/_server-details.scss */
+.switcher-wrapper .content {
+  width: 190px;
+  margin: 0 auto;
+}
+
+/* line 160, ../../app/style_partials/sass/_server-details.scss */
+.switcher-wrapper .switcher {
+  float: left;
+}
+
+/* line 164, ../../app/style_partials/sass/_server-details.scss */
+.switcher-wrapper span {
+  float: left;
+  display: block;
+  margin: 4px 0 0 6px;
+}
+
+/* line 170, ../../app/style_partials/sass/_server-details.scss */
+.mode {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  padding: 5px 20px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #3498db;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+}
+
+/* line 198, ../../app/style_partials/sass/_server-details.scss */
+.mode:hover {
+  background-color: #205f89;
+}
+
+/* line 202, ../../app/style_partials/sass/_server-details.scss */
+.mode.back a {
+  color: #fff;
+}
+
+/* line 206, ../../app/style_partials/sass/_server-details.scss */
+.mode.back,
+.mode.cancel {
+  left: 0;
+}
+
+/* line 211, ../../app/style_partials/sass/_server-details.scss */
+.mode.editing,
+.mode.saving {
+  right: 0;
+}
+
+/* line 216, ../../app/style_partials/sass/_server-details.scss */
+.mode.cancel,
+.mode.saving {
+  display: none;
+}
+
+/* line 221, ../../app/style_partials/sass/_server-details.scss */
+#memory, #storage, #transfer {
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}

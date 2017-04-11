@@ -1,0 +1,227 @@
+.server-details-contents h4.form-title {
+  text-align: left;
+}
+
+.server-details-contents .permissions li.account-permission {
+  display: inline;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 3px;
+  color: #999;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.server-details-contents .permissions li.account-permission.selected {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+.server-details-contents .permissions-table {
+  text-align: left;
+}
+
+.server-photo-figure {
+  border: 1px dashed #ccc;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.server-photo-figure.editable.with-photo {
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+.server-photo-figure.with-photo {
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+.server-photo-figure.with-photo.editable img {
+  cursor: pointer;
+  border: 1px dashed #ccc;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.server-photo-figure.with-photo img {
+  width: 300px;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.server-photo-figure figcaption {
+  padding: 0 10px;
+}
+
+.server-details-contents article {
+  width: 95%;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+@media screen and (min-width: 990px) {
+  .server-details-contents article {
+    margin: 40px auto;
+    width: 40%;
+  }
+}
+
+.server-details-contents #server-name {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.server-details-contents #server-name[disabled] {
+  color: #ccc;
+}
+
+.server-details-contents #server-name:focus {
+    outline: none;
+}
+
+.server-details-contents #server-make-active {
+    margin: 20px 0;
+}
+
+.server-details li {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 1000px) {
+  .server-details li {
+    font-size: 24px;
+  }
+}
+
+.server-details-contents select {
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.server-details-contents .form-group label {
+  width: 100%;
+  text-align: left;
+}
+
+.switcher-wrapper {
+  margin-top: 39px;
+}
+
+.switcher-wrapper .content {
+  width: 190px;
+  margin: 0 auto;
+}
+
+.switcher-wrapper .switcher {
+  float: left;
+}
+
+.switcher-wrapper span {
+  float: left;
+  display: block;
+  margin: 4px 0 0 6px;
+}
+
+.mode {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+
+  padding: 5px 20px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #3498db;
+
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  -o-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+}
+
+.mode:hover {
+  background-color: #205f89;
+}
+
+.mode.back a {
+  color: #fff;
+}
+
+.mode.back,
+.mode.cancel {
+  left: 0;
+}
+
+.mode.editing,
+.mode.saving {
+  right: 0;
+}
+
+.mode.cancel,
+.mode.saving {
+  display: none;
+}
+
+#memory, #storage, #transfer {
+  box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
