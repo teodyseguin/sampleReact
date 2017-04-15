@@ -18,7 +18,7 @@ import '../assets/css/fonts';
 
 (function() {
 	Parse.initialize(AppConfig.parseAppId, AppConfig.parseJSKey);
-	Parse.serverURL = 'https://app24s1prod.pandaclouds.com/parse';
+	Parse.serverURL = 'https://app-domain.com/parse';
 
 	let self = this;
 
